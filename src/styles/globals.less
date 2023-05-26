@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'General Sans', sans-serif !important;
+}
+
+.ant-divider-horizontal {
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hide-true {
+  display: none;
+}
+
+.common-padding {
+
+  padding: 80px 30px;
+
+  @media @xs {
+    padding: 20px 0 20px 0;
+
+  }
+}
+
+
+
+
+
+
+.responsive-spacing(@value , @second : none) {
+
+  & when (@second=none) {
+    padding: @value 30px;
+  }
+
+  & when (@second =bottom) {
+    padding: 0px 30px @value 30px;
+  }
+
+  @media @xs {
+    padding: 20px 0 20px 0;
+  }
+}
